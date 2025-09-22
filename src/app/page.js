@@ -101,12 +101,12 @@ export default function Home() {
               <Link className="hover:text-accent-teal transition-colors" href="#about">About</Link>
               <Link className="hover:text-accent-teal transition-colors" href="#help">Help & Support</Link>
             </nav>
-            <div className="flex items-center gap-4">
-              <Link className="text-base font-medium hover:text-accent-teal transition-colors" href="signin">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <Link className="text-sm sm:text-base font-medium hover:text-accent-teal transition-colors" href="signin">
                 Log in
               </Link>
              
-              <Link className="px-6 py-2 bg-primary-purple text-white font-bold rounded-full hover:opacity-90 transition-opacity glowing-highlight" href="signup">
+              <Link className="px-4 sm:px-6 py-2 bg-primary-purple text-white font-bold rounded-full hover:opacity-90 transition-opacity glowing-highlight touch-manipulation text-sm sm:text-base" href="signup">
                 Sign Up
               </Link>
             
@@ -125,11 +125,11 @@ export default function Home() {
               <p className="text-lg md:text-xl text-muted-gray max-w-3xl mx-auto mb-10">
                 Plan your future with confidence. Get personalized insights and maximize your retirement savings with our cutting-edge AI.
               </p>
-              <div className="flex justify-center gap-4 flex-wrap">
-                <Link href="/setupplan" className="px-8 py-4 bg-gradient-to-r from-primary-purple to-accent-teal text-white font-bold rounded-full text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 glowing-highlight">
+              <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
+                <Link href="/setupplan" className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-purple to-accent-teal text-white font-bold rounded-full text-base sm:text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 glowing-highlight touch-manipulation">
                   Start Free Plan
                 </Link>
-                <Link href="/signup" className="px-8 py-4 bg-[#25214a] text-white font-bold rounded-full text-lg hover:bg-[#352f6a] transition-colors">
+                <Link href="/signup" className="px-6 sm:px-8 py-3 sm:py-4 bg-[#25214a] text-white font-bold rounded-full text-base sm:text-lg hover:bg-[#352f6a] transition-colors touch-manipulation">
                   Book Consultation
                 </Link>
               </div>
@@ -638,9 +638,9 @@ export default function Home() {
                   <p className="text-lg text-white/80 max-w-xl mx-auto mb-8">
                     Take the first step towards a confident retirement. It&apos;s free to start.
                   </p>
-                  <button className="px-8 py-3 bg-gradient-to-r from-primary-purple to-accent-teal text-white font-bold rounded-full text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 glowing-highlight" type="submit">
+                  <Link href="/setupplan" className="inline-block px-6 sm:px-8 py-3 bg-gradient-to-r from-primary-purple to-accent-teal text-white font-bold rounded-full text-base sm:text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 glowing-highlight touch-manipulation">
     Get Started Today
-</button>
+</Link>
                 </div>
               </div>
             </div>
