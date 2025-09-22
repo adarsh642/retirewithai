@@ -98,34 +98,6 @@ export default function DashboardPage() {
           -webkit-font-smoothing: antialiased;
           font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        
-        /* Mobile optimizations */
-        @media (max-width: 640px) {
-          .dashboard-scope {
-            font-size: 14px;
-          }
-          
-          /* Ensure charts don't overflow on small screens */
-          svg {
-            max-width: 100%;
-            height: auto;
-          }
-          
-          /* Adjust range slider for mobile */
-          input[type="range"] {
-            height: 8px;
-          }
-          
-          /* Mobile-friendly touch targets */
-          button {
-            min-height: 44px;
-          }
-          
-          /* Prevent horizontal scroll */
-          .dashboard-scope {
-            overflow-x: hidden;
-          }
-        }
       `}</style>
   <div className="dashboard-scope relative flex min-h-screen w-full bg-background text-on-surface" style={{ backgroundColor: 'var(--background, #120B1C)' }}>
         <div className="absolute inset-0 -z-10 overflow-hidden" id="particle-container"></div>
