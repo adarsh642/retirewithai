@@ -14,10 +14,10 @@ const Navbar = () => {
       {/* Mobile Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 left-4 z-50 rounded-lg bg-surface/90 p-2 backdrop-blur-md lg:hidden"
-        style={{ backgroundColor: 'rgba(30, 18, 45, 0.9)' }}
+        className="fixed top-2 left-4 z-50 rounded-lg bg-surface/90 p-3 backdrop-blur-md lg:hidden shadow-lg"
+        style={{ backgroundColor: 'rgba(30, 18, 45, 0.95)' }}
       >
-        <span className="material-symbols-outlined text-white">
+        <span className="material-symbols-outlined text-white text-xl">
           {isOpen ? 'close' : 'menu'}
         </span>
       </button>

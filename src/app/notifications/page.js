@@ -1,5 +1,6 @@
 "use client";
 import Navbar from '@/components/Navbar';
+import TopHeader from '@/components/TopHeader';
 
 
 export default function NotificationsPage() {
@@ -20,6 +21,7 @@ export default function NotificationsPage() {
         <div className="layout-container flex h-full grow">
           <Navbar />
           <div className="flex flex-1 flex-col">
+            <TopHeader />
             
             <main className="pl-2 pr-6 md:pl-10 md:pr-16 lg:pl-16 lg:pr-24 xl:pl-24 xl:pr-40 flex flex-1 py-10 lg:py-16">
               <div className="w-full max-w-5xl mx-auto">

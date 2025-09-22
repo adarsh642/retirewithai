@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
+import TopHeader from '@/components/TopHeader';
 
 export default function DashboardPage() {
   useEffect(() => {
@@ -106,6 +107,8 @@ export default function DashboardPage() {
         <Navbar />
 
         <div className="flex flex-1 flex-col lg:ml-0 ml-0">
+          {/* Mobile Top Header - Shows current page name */}
+          <TopHeader />
           <header className="flex h-14 sm:h-16 shrink-0 items-center justify-end border-b border-surface bg-background/80 px-3 sm:px-6 backdrop-blur-md" style={{ backgroundColor: 'rgb(18 11 28 / 0.8)' }}>
             <button className="relative rounded-full p-1.5 sm:p-2 transition-colors hover:bg-surface">
               <span className="material-symbols-outlined text-on-surface-variant text-xl sm:text-2xl">notifications</span>
