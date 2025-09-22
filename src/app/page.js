@@ -177,7 +177,7 @@ export default function Home() {
                     <div className="md:col-span-2 rounded-xl border border-white/10 bg-white/5 p-4">
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold">Portfolio Growth</h4>
-                        <span className="text-xs text-muted-gray">Aug '24 – Jul '25</span>
+                        <span className="text-xs text-muted-gray">Aug &apos;24 – Jul &apos;25</span>
                       </div>
                       <div className="relative h-48">
                         <svg viewBox="0 0 400 160" className="w-full h-full">
@@ -378,7 +378,7 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-white/90 mb-6 italic">
-                      "FuturePlan made retirement planning feel achievable, not overwhelming. The AI forecast was a real eye-opener."
+                      &ldquo;FuturePlan made retirement planning feel achievable, not overwhelming. The AI forecast was a real eye-opener.&rdquo;
                     </p>
                   </div>
                   <div className="flex text-yellow-400 text-xl">★★★★★</div>
@@ -397,7 +397,7 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-white/90 mb-6 italic">
-                      "The smart tax savings feature alone is worth it. I've saved a significant amount that's now working for my future."
+                      &ldquo;The smart tax savings feature alone is worth it. I&apos;ve saved a significant amount that&apos;s now working for my future.&rdquo;
                     </p>
                   </div>
                   <div className="flex text-yellow-400 text-xl">★★★★★</div>
@@ -416,7 +416,7 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-white/90 mb-6 italic">
-                      "As a freelancer, my income fluctuates. FuturePlan's scenario comparison tool is a lifesaver for planning ahead."
+                      &ldquo;As a freelancer, my income fluctuates. FuturePlan&apos;s scenario comparison tool is a lifesaver for planning ahead.&rdquo;
                     </p>
                   </div>
                   <div className="flex text-yellow-400 text-xl">★★★★★</div>
@@ -636,7 +636,7 @@ export default function Home() {
                 <div className="relative">
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Secure Your Future?</h2>
                   <p className="text-lg text-white/80 max-w-xl mx-auto mb-8">
-                    Take the first step towards a confident retirement. It's free to start.
+                    Take the first step towards a confident retirement. It&apos;s free to start.
                   </p>
                   <button className="px-8 py-3 bg-gradient-to-r from-primary-purple to-accent-teal text-white font-bold rounded-full text-lg hover:opacity-90 transition-all duration-300 transform hover:scale-105 glowing-highlight" type="submit">
     Get Started Today

@@ -188,7 +188,7 @@ export default function DashboardPage() {
                         <title>Home Purchase</title>
                       </circle>
                       <circle className="cursor-pointer" cx="363.077" cy="1" fill="#21F3E5" r="5">
-                        <title>Child's Education</title>
+                        <title>Child&apos;s Education</title>
                       </circle>
                     </svg>
                   </div>
@@ -238,8 +238,8 @@ export default function DashboardPage() {
                     <div className="flex items-start gap-4 rounded-lg border border-surface bg-background/50 p-4 transition-colors hover:border-yellow-400/50">
                       <span className="material-symbols-outlined mt-1 text-yellow-400">warning</span>
                       <div>
-                        <h4 className="font-semibold text-white">You're off track by 7%</h4>
-                        <p className="text-sm text-on-surface">Your current savings rate is slightly below target. Let's get you back on track!</p>
+                        <h4 className="font-semibold text-white">You&apos;re off track by 7%</h4>
+                        <p className="text-sm text-on-surface">Your current savings rate is slightly below target. Let&apos;s get you back on track!</p>
                         <button className="mt-2 text-sm font-semibold text-secondary hover:underline">See suggestions</button>
                       </div>
                     </div>

@@ -54,7 +54,7 @@ export default function NotificationsPage() {
                         <h2 className="text-lg font-semibold leading-tight">Tax filing deadline approaching</h2>
                         <p className="text-[#ad8ecc] text-xs font-normal">2 days ago</p>
                       </div>
-                      <p className="text-[#ad8ecc] text-sm mt-1 mb-4">Don't forget to file your taxes before the deadline. Click here to view details and get assistance.</p>
+                      <p className="text-[#ad8ecc] text-sm mt-1 mb-4">Don&apos;t forget to file your taxes before the deadline. Click here to view details and get assistance.</p>
                       <div className="flex gap-2">
                         <button className="flex items-center justify-center rounded-md h-9 px-4 bg-teal-500/10 text-teal-300 text-sm font-medium hover:bg-teal-500/20 transition-colors duration-200">View Details</button>
                         <button className="flex items-center justify-center rounded-md h-9 px-4 bg-transparent text-[#ad8ecc] text-sm font-medium hover:bg-[#36214a] transition-colors duration-200">Mark as Read</button>
@@ -84,7 +84,7 @@ export default function NotificationsPage() {
                         <h2 className="text-lg font-semibold leading-tight">Retirement planning reminder</h2>
                         <p className="text-[#ad8ecc] text-xs font-normal">1 week ago</p>
                       </div>
-                      <p className="text-[#ad8ecc] text-sm mt-1 mb-4">It's time to review your retirement plan and make any necessary adjustments.</p>
+                      <p className="text-[#ad8ecc] text-sm mt-1 mb-4">It&apos;s time to review your retirement plan and make any necessary adjustments.</p>
                       <div className="flex gap-2">
                         <button className="flex items-center justify-center rounded-md h-9 px-4 bg-teal-500/10 text-teal-300 text-sm font-medium hover:bg-teal-500/20 transition-colors duration-200">View Details</button>
                         <button className="flex items-center justify-center rounded-md h-9 px-4 bg-transparent text-[#ad8ecc] text-sm font-medium hover:bg-[#36214a] transition-colors duration-200">Mark as Read</button>
