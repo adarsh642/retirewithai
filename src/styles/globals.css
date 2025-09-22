@@ -58,8 +58,8 @@ details[open] summary .plus-icon {
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -72,7 +72,7 @@ details[open] summary .plus-icon {
 
 
 body {
-  background: #ffffff;
-  color: #171717;
+  background: var(--background);
+  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
