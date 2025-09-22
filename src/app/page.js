@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 
 const FuturePlanIcon = (props) => (
@@ -78,11 +79,6 @@ export default function Home() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FuturePlan - AI-Powered Retirement Planning</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
       </Head>
       <div className="relative min-h-screen flex flex-col overflow-x-hidden bg-dark-charcoal text-white">
         <div className="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-br from-[#121023] via-[#1a1a2e] to-dark-charcoal -z-10"></div>
@@ -367,10 +363,12 @@ export default function Home() {
                 <div className="bg-[#1b1835]/60 p-8 rounded-2xl border border-white/10 soft-shadow flex flex-col justify-between">
                   <div>
                     <div className="flex items-center mb-4">
-                      <img
+                      <Image
                         alt="User avatar"
                         className="w-14 h-14 rounded-full mr-4"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzo0IZ4WzwOQm-Mgfhh1fc6_JkJilNgnfcVDMdXNECUFDIXw_13CvkjMDKJJ6UR2r70WhYJ0-JvL7Wpk9VV2xbK8C1lYaaChrRpTvDRt1pB38GcLk8Dohau1HYnlGFaB7-OUxycQJQ1EEIZJre8z8EfRWXOGG1fVCxTfn1GAkfpEY29OCxnk-hXilNrhqeEholDZahy1E-muZAovVTtRLWXvbtm-N6pwiZ-SPZbThHqJN1YaxZKBreiBhjX9xF0FVYWWkXoitf5LA"
+                        width={56}
+                        height={56}
                       />
                       <div>
                         <h4 className="font-bold text-xl">Sophia C.</h4>
@@ -386,10 +384,12 @@ export default function Home() {
                 <div className="bg-[#1b1835]/60 p-8 rounded-2xl border border-white/10 soft-shadow flex flex-col justify-between">
                   <div>
                     <div className="flex items-center mb-4">
-                      <img
+                      <Image
                         alt="User avatar"
                         className="w-14 h-14 rounded-full mr-4"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAapcj9YuwitAOCQHIckRKzkJqH5WG2d50e0YGgRDbc1JxxHQ5G_hMjc5iBNkfxi172GlGEz7CcgSN3sYBVDgbePO8SgLEJAMpYBAjvkOd533rnoXC3bTESxzyqfFSLqJ5rA2NgpGxB6NaWC-guGI8LY69VeqLKXl3XlB2V_HqP3ZVKaqigP6ExHPTPMVIgcWUpG90hwZHifo35R4k_lXw6D3vhQsrneGDnCyl70Scm06NdufJgxJtRvR0FvZGxUIWkzPwCATxhKyQ"
+                        width={56}
+                        height={56}
                       />
                       <div>
                         <h4 className="font-bold text-xl">Ethan B.</h4>
@@ -405,10 +405,12 @@ export default function Home() {
                 <div className="bg-[#1b1835]/60 p-8 rounded-2xl border border-white/10 soft-shadow flex flex-col justify-between">
                   <div>
                     <div className="flex items-center mb-4">
-                      <img
+                      <Image
                         alt="User avatar"
                         className="w-14 h-14 rounded-full mr-4"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuD939F47Yy-jKz869k660uO62_Y-iW1J2U7C3tC_F_E5l3n_z9a6m7-Jk_X8d-o2W5F4Y2e-p6T_g4J-w1c7R8e9N9j3X4l-l-w1S6g1h0a3V9j2c8d7T1k8h7j6K5j4"
+                        width={56}
+                        height={56}
                       />
                       <div>
                         <h4 className="font-bold text-xl">Olivia P.</h4>
@@ -602,25 +604,33 @@ export default function Home() {
             <div className="container mx-auto px-6">
               <h3 className="text-center text-lg text-muted-gray font-semibold mb-8">TRUSTED BY THE BEST IN FINTECH</h3>
               <div className="flex justify-around items-center gap-8 flex-wrap">
-                <img
+                <Image
                   alt="Partner Logo 1"
                   className="h-10 opacity-60 hover:opacity-100 transition-opacity"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFPIjGSj3sBg72m1KTaEJh0w-8oe_-WEzvMgUmJOywqcY4Hbs1A_xDP5wmNG5E0YSNIii_sZtI2K8cOjsmPRpK-s85F9YWplUloLObWbI4101olSgzBz-8ZvRyvFjH7DFFPMQFnqwZ5qK-294hnHkpwpa_pcg_vL8FhIhKJ86afaQ1BOpnwz-YignoGSvSw01M4cKAFoAFXbvl3DCq68WtL7ZotbVfNuxQOmIdOJUjLTSbIqqBtj-X7xxouYQ4GFIjPD8cqofwbUk"
+                  width={120}
+                  height={40}
                 />
-                <img
+                <Image
                   alt="Partner Logo 2"
                   className="h-10 opacity-60 hover:opacity-100 transition-opacity"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcrflyWzin7qsOv2gbYa6CrM7u0jsEIR8HtQGofAqbJ1TuXxv_3Z-L0a10Uorj_dGOAq6ecoYpdGuTXFrlfKYdBsNa27ZrtyMOE91btYREgzBrtnBK4VlZaCkInHxy6Qlwn5XHFAE0deQsnoblRVEEvT_hvt62YcELxilh5a6rM4rO2sETHVEIcq1CIwP0UQw_aleV1bSifhDdyUsUiMZAV7BiEp2zSPuYJu_MOJgGKnHTbf76O5pvmWDUGpzvhpr239weZ8G0a5w"
+                  width={120}
+                  height={40}
                 />
-                <img
+                <Image
                   alt="Partner Logo 3"
                   className="h-10 opacity-60 hover:opacity-100 transition-opacity"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQQn9eEtlzA7Ur2E6wiXmovOCx9SDoJzTtLlwdWKL9P5HN_iNb9ZRgqrTaox6dDTk75tD9fY39W9NqbNqVfl--vrBlcQ0zKs8VlwhkJYDvC5t3HmWG_x6fzPNfpx4QSZ_htpBXbcza-YMWaSzLomAbvFif63DiKVtmP4ccHktxdvkBaJ0pUygTZTW-IRFn46B4hV1Q3raTO_dmqjiBEI7jNwInsvyejBrq6KIkIsK9eomw6wZOGlmu1ddXUmERaqkRNdwb4O1_ikg"
+                  width={120}
+                  height={40}
                 />
-                <img
+                <Image
                   alt="Partner Logo 4"
                   className="h-10 opacity-60 hover:opacity-100 transition-opacity"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzunk5fbvZZvZ4X93eUnq49m5D9kXU-XDZR9QGZX8aM11YciL1W6JVqhXy55a7xZpi2oiCW4sPM2Cv1vlV2VkmE3tKcMsmpscL6HVUtpAFGvwgD4mFeMLkRNTVSvY3GNj1hwXqON4bxK1bmhX2J6Xi41zS-MOUG2CunZhPmkEwldFsEWyXowb2ZC9skCo5KAop5EaJy4Ji3g9uanBk16PMvT1IGx5GJ-DSLVjKuT9sgyZjSK4v3mhf002A66B4kip_GLABsR9qZAU"
+                  width={120}
+                  height={40}
                 />
               </div>
             </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 
 export default function SettingsPage() {
@@ -79,7 +80,7 @@ export default function SettingsPage() {
                 <div className="px-6 pb-6 pt-2">
                   <div className="flex flex-col md:flex-row items-center gap-8">
                     <div className="relative group">
-                      <img className="w-32 h-32 rounded-full border-4 border-purple-500/50 object-cover" alt="Sophia's avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLOy8FcFIcw4raBkk27NJZgl6yawk3mYgDFcd--b9dT4GESh590ZyrSJr87lgYkBFXtRHdTvW7LZQ7eLm3QaYx_T8eDSduqDYr9jsNTVxTMIEqx5ZWMTQvoQJXIZ1mxvTtsmuaRWfy2WvnJjY8po4qIc7NDvAv_5KF9DAHBHs6edPHcwQDSACcZHqV9Hp2ldJ9Z4x1_wJ1vq1oFlo9xNx2rxyBzdPtz56P0rWmjnP5zI5xEPYRbzBI_F59o0xWtlozcqerZwbU_qE" />
+                      <Image className="w-32 h-32 rounded-full border-4 border-purple-500/50 object-cover" alt="Sophia's avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLOy8FcFIcw4raBkk27NJZgl6yawk3mYgDFcd--b9dT4GESh590ZyrSJr87lgYkBFXtRHdTvW7LZQ7eLm3QaYx_T8eDSduqDYr9jsNTVxTMIEqx5ZWMTQvoQJXIZ1mxvTtsmuaRWfy2WvnJjY8po4qIc7NDvAv_5KF9DAHBHs6edPHcwQDSACcZHqV9Hp2ldJ9Z4x1_wJ1vq1oFlo9xNx2rxyBzdPtz56P0rWmjnP5zI5xEPYRbzBI_F59o0xWtlozcqerZwbU_qE" width={128} height={128} />
                       <div className="absolute inset-0 bg-black/60 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer">
                         <span className="material-symbols-outlined text-5xl text-white glow-teal">add_a_photo</span>
                       </div>
