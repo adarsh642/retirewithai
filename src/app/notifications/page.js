@@ -1,9 +1,12 @@
 "use client";
+import { useState } from 'react';
 import Navbar from '@/components/Navbar';
-import TopHeader from '@/components/TopHeader';
+import DashboardHeader from '@/components/DashboardHeader';
 
 
 export default function NotificationsPage() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   return (
     <div className="notifications-page bg-[#120B1A] text-white min-h-screen" style={{ fontFamily: 'Inter, "Noto Sans", sans-serif' }}>
       {/* Material Symbols */}
@@ -19,9 +22,9 @@ export default function NotificationsPage() {
 
       <div className="relative flex h-auto min-h-screen w-full flex-col bg-gradient-to-br from-[#120B1A] via-[#1a1023] to-[#120B1A] overflow-x-hidden">
         <div className="layout-container flex h-full grow">
-          <Navbar />
+          <Navbar isOpen={isNavOpen} setIsOpen={setIsNavOpen} />
           <div className="flex flex-1 flex-col">
-            <TopHeader />
+            <DashboardHeader isOpen={isNavOpen} setIsOpen={setIsNavOpen} />
             
             <main className="pl-2 pr-6 md:pl-10 md:pr-16 lg:pl-16 lg:pr-24 xl:pl-24 xl:pr-40 flex flex-1 py-10 lg:py-16">
               <div className="w-full max-w-5xl mx-auto">

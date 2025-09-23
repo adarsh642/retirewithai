@@ -3,24 +3,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ isOpen = false, setIsOpen = () => {} }) => {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
   const linkBase = "flex items-center gap-2 rounded-lg px-3 py-2 transition-colors hover:bg-surface hover:text-white";
   const isActive = (href) => pathname === href;
 
   return (
     <>
-      {/* Mobile Hamburger Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-2 left-4 z-50 rounded-lg bg-surface/90 p-3 backdrop-blur-md lg:hidden shadow-lg"
-        style={{ backgroundColor: 'rgba(30, 18, 45, 0.95)' }}
-      >
-        <span className="material-symbols-outlined text-white text-xl">
-          {isOpen ? 'close' : 'menu'}
-        </span>
-      </button>
 
       {/* Mobile Overlay */}
       {isOpen && (

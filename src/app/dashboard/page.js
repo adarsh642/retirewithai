@@ -1,10 +1,12 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
-import TopHeader from '@/components/TopHeader';
+import DashboardHeader from '@/components/DashboardHeader';
 
 export default function DashboardPage() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   useEffect(() => {
     const container = document.getElementById('particle-container');
     if (!container) return;
@@ -104,17 +106,11 @@ export default function DashboardPage() {
         <div className="absolute inset-0 -z-10 overflow-hidden" id="particle-container"></div>
         
         {/* Navbar Component */}
-        <Navbar />
+        <Navbar isOpen={isNavOpen} setIsOpen={setIsNavOpen} />
 
         <div className="flex flex-1 flex-col lg:ml-0 ml-0">
-          {/* Mobile Top Header - Shows current page name */}
-          <TopHeader />
-          <header className="flex h-14 sm:h-16 shrink-0 items-center justify-end border-b border-surface bg-background/80 px-3 sm:px-6 backdrop-blur-md" style={{ backgroundColor: 'rgb(18 11 28 / 0.8)' }}>
-            <button className="relative rounded-full p-1.5 sm:p-2 transition-colors hover:bg-surface">
-              <span className="material-symbols-outlined text-on-surface-variant text-xl sm:text-2xl">notifications</span>
-              <span className="absolute right-0.5 top-0.5 sm:right-1 sm:top-1 block h-2 w-2 rounded-full bg-secondary ring-2 ring-background"></span>
-            </button>
-          </header>
+          {/* Dashboard Header with hamburger menu and page name */}
+          <DashboardHeader isOpen={isNavOpen} setIsOpen={setIsNavOpen} />
           <main className="flex-1 overflow-y-auto px-3 py-4 sm:px-4 sm:py-6 lg:px-8 lg:py-8">
             <div className="mx-auto max-w-7xl">
             <div className="grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-12 lg:gap-8">
